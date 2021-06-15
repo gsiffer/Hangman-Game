@@ -1,0 +1,181 @@
+@charset "utf-8";
+
+@import "reset.scss";
+
+@import "style_with_meyer_reset.scss";
+
+@import "pop_up.scss";
+
+
+$btn_font_color: white;
+$btn_background_color: black;
+// $btn_hover_color: #70706f;
+$footer_font_color: white;
+$footer_border_color: white;
+$footer_background_color: black;
+$used_letter_background_color: rgb(135, 138, 135);
+$abc_border_color: white;
+$abc_background_color: #e0ded7;
+
+/* ensure all page elements use box-sizing:border-box; */
+html {
+  box-sizing: border-box;
+  font-family: roboto_regular, tahoma, sans-serif;
+  font-size: 1rem;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body{
+	margin:0px;
+    background-image: url("../images/brick.jpg");
+}
+
+main{
+    flex: 1;
+    padding:10px;
+}
+
+h1, h2, h3, h4, h5, h6{
+    margin: 0px;
+}
+
+h3{
+    line-height: 20px;          
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+input{
+    border-radius: 5px;
+    color: $btn_font_color;
+    background-color: $btn_background_color;
+    width: 40px;
+    margin: 0px 2px 2px 0px;
+    cursor: pointer;
+}
+
+input:hover,
+input:active{
+    background-color: $used_letter_background_color;
+}
+
+footer{
+	line-height: 30px;
+    text-align: center;
+    color: $footer_font_color;
+    border-top: solid 1px $footer_border_color;
+    background-color: $footer_background_color;
+}
+
+.used-letter{
+    background-color: $used_letter_background_color;
+}
+
+#hangman{
+    margin-top: 10%;
+    max-width: 400px; 
+    margin-left: auto;
+    margin-right: auto;
+    height: 450px;
+    background-image: url("../images/torn_paper.png");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size:cover;
+
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    p{
+        margin: 17px 0px 0px 0px;
+        max-width: 200px;
+        border-radius: 10px;
+        align-self: center;
+        color: white;
+        background-color: rgb(235, 149, 149);
+        padding: 3px 10px 3px 10px;
+    }
+
+    figure{
+        width:50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #display-word{
+        margin-top: 24px;
+        text-align: center;
+
+        label{
+            display:inline-block;
+            width: 24px;
+            text-align: center;
+            font-size: 1.5em;
+        }
+    }
+
+    #province{
+        color:rgb(205, 81, 50);
+        display:flex;
+        justify-content: center;
+        padding: 5px;
+
+        div{
+            margin-left: 5px;
+            max-width: 18px;
+        }
+    }
+
+    button{
+        align-self: center;
+        margin-top: 30px;
+        border-radius:10px;
+        padding: 3px;
+        width: 100px;
+        cursor: pointer;
+    }
+}
+
+#hangman button:active,
+#hangman button:hover{
+    background-color: rgb(231, 196, 131);
+}
+
+#wrapper {
+    display:flex;
+    flex-direction: column;
+    max-width: 1024px;
+    min-height:100vh;
+    margin: auto;
+    box-shadow: 0px 0px 12px 12px rgb(27, 27, 27);
+    background-image: url("../images/hangman_background.jpg");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+#abc{
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 500px;
+    text-align: center;
+    border: solid 2px $abc_border_color;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: $abc_background_color;
+}
+
+@font-face{
+    font-family:'roboto_regular';
+
+    src: url('../fonts/roboto-regular.woff2')format('woff2');
+    src: url('../fonts/roboto-regular.woff')format('woff');
+
+    font-style:normal;
+}

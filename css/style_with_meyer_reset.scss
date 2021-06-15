@@ -1,0 +1,336 @@
+
+/*
+add your styles AFTER loading the CSS reset styles
+
+if the reset has removed all sizing, margins, padding, etc,
+you will need to rebuild them now.
+*/
+
+body{
+	display: block;
+	margin: 8px;	
+}
+
+h1{	
+	display: block;
+	font-size: 2em;
+	margin-top: 0.67em;
+	margin-bottom: 0.67em;
+	margin-left: 0;
+	margin-right: 0;
+	font-weight: bold;
+}
+
+h2{	
+	display: block;
+	font-size: 1.5em;
+	margin-top: 0.83em;
+	margin-bottom: 0.83em;
+	margin-left: 0;
+	margin-right: 0;
+	font-weight: bold;	
+}
+
+h3{	
+	display: block;
+	font-size: 1.17em;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	margin-left: 0;
+	margin-right: 0;
+	font-weight: bold;	
+}
+
+h4{	
+	display: block;
+	margin-top: 1.33em;
+	margin-bottom: 1.33em;
+	margin-left: 0;
+	margin-right: 0;
+	font-weight: bold;	
+}
+
+h5{	
+	display: block;
+	font-size: .83em;
+	margin-top: 1.67em;
+	margin-bottom: 1.67em;
+	margin-left: 0;
+	margin-right: 0;
+	font-weight: bold;	
+}
+
+h6{	
+	display: block;
+	font-size: .67em;
+	margin-top: 2.33em;
+	margin-bottom: 2.33em;
+	margin-left: 0;
+	margin-right: 0;
+	font-weight: bold;	
+}
+
+h1, h2, h3, h4, h5, h6{
+	font-weight:bold;	
+	margin:10px 5px;
+}
+p{ 	
+	display: block;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	margin-left: 0;
+	margin-right: 0;
+}
+
+ul{
+	display: block;
+	list-style-type: disc;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	margin-left: 0;
+	margin-right: 0;
+	padding-left: 40px;
+}
+
+ol{
+	display: block;
+	list-style-type: decimal;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	margin-left: 0;
+	margin-right: 0;
+	padding-left: 40px;
+}
+
+small{
+	font-size:smaller;
+}
+
+strong{
+	font-weight: bold;
+}
+
+table{
+	display: table;
+	border-collapse: separate;
+	border-spacing: 2px;
+	border-color: gray;
+}
+
+tr{
+	display: table-row;
+	vertical-align: inherit;
+	border-color: inherit;
+}
+
+th{
+	display: table-cell;
+	vertical-align: inherit;
+	font-weight: bold;
+	text-align: center;
+}
+
+td{
+	display: table-cell;
+	vertical-align: inherit;
+}
+
+blockquote{
+	display: block;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	margin-left: 40px;
+	margin-right: 40px;
+}
+
+pre{
+	display: block;
+	font-family: monospace;
+	white-space: pre;
+	margin: 1em 0;
+}
+
+address{
+	display: block;
+	font-style: italic;	
+}
+
+cite{
+	font-style: italic;
+}
+
+code{
+	font-family: monospace;
+}
+
+del{
+	text-decoration: line-through;
+}
+
+dfn{
+	font-style: italic;
+}
+
+em{
+	font-style: italic;
+}
+
+img{
+	display: inline-block;
+}
+
+var{
+	font-style: italic;
+}
+
+li{
+	display: list-item;	
+}
+
+fieldset{
+	display: block;
+	margin-left: 2px;
+	margin-right: 2px;
+	padding-top: 0.35em;
+	padding-bottom: 0.625em;
+	padding-left: 0.75em;
+	padding-right: 0.75em;
+	border: 2px groove; 	/*border: 2px groove (internal value);*/
+}
+
+form{
+	display: block;
+	margin-top: 0em;
+}
+
+label{
+	cursor: default;
+}
+
+legend{
+	display: block;
+	padding-left: 2px;
+	padding-right: 2px;
+	border: none;
+}
+
+figure{
+	display: block;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	margin-left: 40px;
+	margin-right: 40px;
+}
+
+figcaption{
+	display: block;
+}
+
+ins{
+	text-decoration: underline;
+}
+
+kbd{
+	font-family: monospace;
+}
+
+q{
+	display: inline;
+}
+
+s{
+	text-decoration: line-through;
+}
+
+samp{
+	font-family: monospace;
+}
+
+strike{
+	text-decoration: line-through;
+}
+
+sub{
+	vertical-align: sub;
+	font-size: smaller;
+}
+
+sup{
+	vertical-align: super;
+	font-size: smaller;
+}
+
+b{
+	font-weight: bold;
+}
+
+u{
+	text-decoration: underline;
+}
+
+i{
+	font-style: italic;
+}
+
+dl{
+	display: block;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	margin-left: 0;
+	margin-right: 0;
+}
+
+dt{
+	display: block;
+}
+
+dd{
+	display: block;
+	margin-left: 40px;
+}
+
+caption{
+	display: table-caption;
+	text-align: center;
+}
+
+tbody{
+	display: table-row-group;
+	vertical-align: middle;
+	border-color: inherit;
+}
+
+tfoot{
+	display: table-footer-group;
+	vertical-align: middle;
+	border-color: inherit;
+}
+
+thead{
+	display: table-header-group;
+	vertical-align: middle;
+	border-color: inherit;
+}
+
+menu{
+	display: block;
+	list-style-type: disc;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	margin-left: 0;
+	margin-right: 0;
+	padding-left: 40px;
+}
+
+output{
+	display: inline;
+}
+
+summary{
+	display: block;
+}
+
+mark{
+	background-color: yellow;
+	color: black;
+}

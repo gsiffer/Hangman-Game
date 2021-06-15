@@ -1,0 +1,97 @@
+
+$pop_up_border_color_inner: #a0a09f;
+$pop_up_border_color_middle: #555454;
+$pop_up_border_color_outer: #2c2b2b;
+$pop_up_font_color: white;
+$btn_hover_color: #70706f;
+
+$border: 0 0 0 2px $pop_up_border_color_inner,
+		 0 0 0 4px $pop_up_border_color_middle, 
+		 0 0 0 8px $pop_up_border_color_outer;
+
+$linear_color: linear-gradient(to bottom, #646464 0%, #b6b4b4 100%);
+
+@mixin btn-color($background_color, $border_color, $font_color){
+	background-color: $background_color;
+    border: 2px solid $border_color;
+	color: $font_color;
+}
+
+.pop-up-window{
+	
+	position:absolute;
+	left:50%;
+	top:50%;
+	transform:translate(-50%, -50%);
+
+	max-width:500px;
+	min-width:250px;
+	padding:10px;
+	border-radius:10px;
+	box-shadow: $border;
+	background: $linear_color;
+	color: $pop_up_font_color;
+
+	h3{
+		
+		text-align: center;
+		text-shadow: 1px 1px 0 rgb(92, 91, 91),
+					 3px 3px 0 black;
+	}
+}
+
+#pop-up{
+	/* remove this popup from normal page */
+    position:fixed;
+    top:0px;
+    left:0px;     
+	
+	/* fill the entire viewport */
+    width:100vw;
+    height:100vh;    
+	/* ensure it is over-top all other page elements */
+	z-index:1000;
+
+    opacity: 0;
+	/* transparency allows user to see content behind */
+	background-color: rgba(45, 66, 66, .4);    
+}
+
+#welcome-pop-up{
+
+	figure{
+		max-width: 200px;
+		margin-left: auto;
+    	margin-right: auto;
+
+		img{
+			border-radius: 10px;
+			box-shadow: $border;
+		}
+	}
+
+	div{
+		text-align: center;
+	}
+}
+
+#pop-up button{
+    border-radius:10px;
+    padding: 3px;
+	@include btn-color($pop_up_border_color_middle, $pop_up_font_color, $pop_up_font_color);
+    width: 100px;
+    cursor: pointer;
+}
+
+#pop-up button:active,
+#pop-up button:hover{
+    background-color: $btn_hover_color;
+}
+
+#game-rule-pop-up{
+    display: none;
+
+	div{
+		text-align: center;
+	}
+}

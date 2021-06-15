@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">	
+	<head>
+		<title>Project</title>
+		<meta charset="utf-8" />
+		<!-- Mobile viewport meta tag 
+			  this will deal with displays
+			  that can make a physically small device 
+			  appear much larger to a media query
+			  
+			  ensure this tag is applied BEFORE your media queries
+		-->	
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<link rel="stylesheet" href="css/style.css" media="all" />
+		<script src="scripts/jquery-3.4.1.min.js" defer="defer"></script>
+		<script src="scripts/project.js" defer="defer"></script>
+	</head>	
+	<body>	
+	
+	<div id="wrapper">
+
+		<noscript>
+            <div class="warning warning-no-script"> 
+                <p>Oh no! It's definitely time to panic...</p>
+                <h2>Javascript Is Disabled!</h2>
+				<p>This page requires JavaScript to run.</p>
+				<p>Please <a href="https://www.whatismybrowser.com/guides/how-to-enable-javascript/">enable javascript</a> in your browser then refresh this page.</p>				
+            </div>
+        </noscript>
+
+		<main>
+
+			<section>
+
+				<div id='hangman'>
+					<p>Incorrect guesses <spam id='incorrect'>0</spam>/6</p>
+					<figure id='hangman-img'>
+						<img src = 'images/hangman0.png' alt = 'hangman' />
+					</figure>
+
+					<div id='display-word'></div>
+
+					<div id='province'>
+						<h3 id='hint'></h3>
+						<div id='canada-logo'>
+							<img src="images/canada_flag.jpg" alt="logo" />
+						</div>
+					</div>
+
+					<button id='start'>Start</button>
+
+				</div>
+
+				<div id='abc'>
+					
+					<input type="button" value="A" id="a">
+					<input type="button" value="B" id="b">
+					<input type="button" value="C" id="c">
+					<input type="button" value="D" id="d">
+					<input type="button" value="E" id="e">
+					<input type="button" value="F" id="f">
+					<input type="button" value="G" id="g">
+					<input type="button" value="H" id="h">
+					<input type="button" value="I" id="i">
+					<input type="button" value="J" id="j">
+					<input type="button" value="K" id="k">
+					<input type="button" value="L" id="l">
+					<input type="button" value="M" id="m">
+					<input type="button" value="N" id="n">
+					<input type="button" value="O" id="o">
+					<input type="button" value="P" id="p">
+					<input type="button" value="Q" id="q">
+					<input type="button" value="R" id="r">
+					<input type="button" value="S" id="s">
+					<input type="button" value="T" id="t">
+					<input type="button" value="U" id="u">
+					<input type="button" value="V" id="v">
+					<input type="button" value="W" id="w">
+					<input type="button" value="X" id="x">
+					<input type="button" value="Y" id="y">
+					<input type="button" value="Z" id="z">
+					
+				</div>
+
+			</section>
+			
+		</main>
+		
+		<footer>
+			<small>&copy; 2021 Hangman Game&nbsp; Web Design Gabor Siffer</small>
+		</footer>
+	</div>
+
+	<section id='pop-up'>
+
+		<div id='welcome-pop-up' class='pop-up-window'>
+			<h3 id='pop-up-title'>Welcome to the Hangman Game!</h3>
+			<figure id='pop-up-image'>
+				<img src = 'images/executioner.jpg' alt = 'executioner' />
+			</figure>
+			<div>
+				<button id='game-rule'>Rules</button>
+				<button id="close">Go to Game</button>
+			</div>
+		</div>
+
+		<div id='game-rule-pop-up' class='pop-up-window'>
+			<h3>Rules</h3>
+			<p>
+				<ul>
+					<li>To start click on the 'Start' button</li>
+					<li>You have six chances to guess the entire word</li>
+					<li>For each wrong guess, the stick man will be one step closer to his unfortunate death on the noose</li>
+				</ul>
+			</p>
+			<div>
+				<button id='ok'>OK</button>
+			</div>
+		</div>
+
+	</section>
+	
+	</body>	
+</html>
+

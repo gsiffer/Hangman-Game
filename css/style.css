@@ -1,0 +1,629 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*
+add your own rules if to make this
+reset ideal for all your future 
+web projects
+*/
+/*
+h1, h2, h3, h4, h5, h6{
+	font-weight:bold;
+	margin:15px 5px;
+}
+h1{	font-size:35px; }
+h2{	font-size:30px; }
+h3{	font-size:25px; }
+h4{	font-size:22px; }
+h5{	font-size:20px; }
+h6{	font-size:18px; }
+*/
+/*
+add your styles AFTER loading the CSS reset styles
+
+if the reset has removed all sizing, margins, padding, etc,
+you will need to rebuild them now.
+*/
+body {
+  display: block;
+  margin: 8px;
+}
+
+h1 {
+  display: block;
+  font-size: 2em;
+  margin-top: 0.67em;
+  margin-bottom: 0.67em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+}
+
+h2 {
+  display: block;
+  font-size: 1.5em;
+  margin-top: 0.83em;
+  margin-bottom: 0.83em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+}
+
+h3 {
+  display: block;
+  font-size: 1.17em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+}
+
+h4 {
+  display: block;
+  margin-top: 1.33em;
+  margin-bottom: 1.33em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+}
+
+h5 {
+  display: block;
+  font-size: 0.83em;
+  margin-top: 1.67em;
+  margin-bottom: 1.67em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+}
+
+h6 {
+  display: block;
+  font-size: 0.67em;
+  margin-top: 2.33em;
+  margin-bottom: 2.33em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+  margin: 10px 5px;
+}
+
+p {
+  display: block;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+ul {
+  display: block;
+  list-style-type: disc;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 40px;
+}
+
+ol {
+  display: block;
+  list-style-type: decimal;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 40px;
+}
+
+small {
+  font-size: smaller;
+}
+
+strong {
+  font-weight: bold;
+}
+
+table {
+  display: table;
+  border-collapse: separate;
+  border-spacing: 2px;
+  border-color: gray;
+}
+
+tr {
+  display: table-row;
+  vertical-align: inherit;
+  border-color: inherit;
+}
+
+th {
+  display: table-cell;
+  vertical-align: inherit;
+  font-weight: bold;
+  text-align: center;
+}
+
+td {
+  display: table-cell;
+  vertical-align: inherit;
+}
+
+blockquote {
+  display: block;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+pre {
+  display: block;
+  font-family: monospace;
+  white-space: pre;
+  margin: 1em 0;
+}
+
+address {
+  display: block;
+  font-style: italic;
+}
+
+cite {
+  font-style: italic;
+}
+
+code {
+  font-family: monospace;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+dfn {
+  font-style: italic;
+}
+
+em {
+  font-style: italic;
+}
+
+img {
+  display: inline-block;
+}
+
+var {
+  font-style: italic;
+}
+
+li {
+  display: list-item;
+}
+
+fieldset {
+  display: block;
+  margin-left: 2px;
+  margin-right: 2px;
+  padding-top: 0.35em;
+  padding-bottom: 0.625em;
+  padding-left: 0.75em;
+  padding-right: 0.75em;
+  border: 2px groove;
+  /*border: 2px groove (internal value);*/
+}
+
+form {
+  display: block;
+  margin-top: 0em;
+}
+
+label {
+  cursor: default;
+}
+
+legend {
+  display: block;
+  padding-left: 2px;
+  padding-right: 2px;
+  border: none;
+}
+
+figure {
+  display: block;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+figcaption {
+  display: block;
+}
+
+ins {
+  text-decoration: underline;
+}
+
+kbd {
+  font-family: monospace;
+}
+
+q {
+  display: inline;
+}
+
+s {
+  text-decoration: line-through;
+}
+
+samp {
+  font-family: monospace;
+}
+
+strike {
+  text-decoration: line-through;
+}
+
+sub {
+  vertical-align: sub;
+  font-size: smaller;
+}
+
+sup {
+  vertical-align: super;
+  font-size: smaller;
+}
+
+b {
+  font-weight: bold;
+}
+
+u {
+  text-decoration: underline;
+}
+
+i {
+  font-style: italic;
+}
+
+dl {
+  display: block;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+dt {
+  display: block;
+}
+
+dd {
+  display: block;
+  margin-left: 40px;
+}
+
+caption {
+  display: table-caption;
+  text-align: center;
+}
+
+tbody {
+  display: table-row-group;
+  vertical-align: middle;
+  border-color: inherit;
+}
+
+tfoot {
+  display: table-footer-group;
+  vertical-align: middle;
+  border-color: inherit;
+}
+
+thead {
+  display: table-header-group;
+  vertical-align: middle;
+  border-color: inherit;
+}
+
+menu {
+  display: block;
+  list-style-type: disc;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 40px;
+}
+
+output {
+  display: inline;
+}
+
+summary {
+  display: block;
+}
+
+mark {
+  background-color: yellow;
+  color: black;
+}
+
+.pop-up-window {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 500px;
+  min-width: 250px;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 0 2px #a0a09f, 0 0 0 4px #555454, 0 0 0 8px #2c2b2b;
+  background: linear-gradient(to bottom, #646464 0%, #b6b4b4 100%);
+  color: white;
+}
+.pop-up-window h3 {
+  text-align: center;
+  text-shadow: 1px 1px 0 #5c5b5b, 3px 3px 0 black;
+}
+
+#pop-up {
+  /* remove this popup from normal page */
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  /* fill the entire viewport */
+  width: 100vw;
+  height: 100vh;
+  /* ensure it is over-top all other page elements */
+  z-index: 1000;
+  opacity: 0;
+  /* transparency allows user to see content behind */
+  background-color: rgba(45, 66, 66, 0.4);
+}
+
+#welcome-pop-up figure {
+  max-width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+#welcome-pop-up figure img {
+  border-radius: 10px;
+  box-shadow: 0 0 0 2px #a0a09f, 0 0 0 4px #555454, 0 0 0 8px #2c2b2b;
+}
+#welcome-pop-up div {
+  text-align: center;
+}
+
+#pop-up button {
+  border-radius: 10px;
+  padding: 3px;
+  background-color: #555454;
+  border: 2px solid white;
+  color: white;
+  width: 100px;
+  cursor: pointer;
+}
+
+#pop-up button:active,
+#pop-up button:hover {
+  background-color: #70706f;
+}
+
+#game-rule-pop-up {
+  display: none;
+}
+#game-rule-pop-up div {
+  text-align: center;
+}
+
+/* ensure all page elements use box-sizing:border-box; */
+html {
+  box-sizing: border-box;
+  font-family: roboto_regular, tahoma, sans-serif;
+  font-size: 1rem;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0px;
+  background-image: url("../images/brick.jpg");
+}
+
+main {
+  flex: 1;
+  padding: 10px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0px;
+}
+
+h3 {
+  line-height: 20px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+input {
+  border-radius: 5px;
+  color: white;
+  background-color: black;
+  width: 40px;
+  margin: 0px 2px 2px 0px;
+  cursor: pointer;
+}
+
+input:hover,
+input:active {
+  background-color: #878a87;
+}
+
+footer {
+  line-height: 30px;
+  text-align: center;
+  color: white;
+  border-top: solid 1px white;
+  background-color: black;
+}
+
+.used-letter {
+  background-color: #878a87;
+}
+
+#hangman {
+  margin-top: 10%;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 450px;
+  background-image: url("../images/torn_paper.png");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+#hangman p {
+  margin: 17px 0px 0px 0px;
+  max-width: 200px;
+  border-radius: 10px;
+  align-self: center;
+  color: white;
+  background-color: #eb9595;
+  padding: 3px 10px 3px 10px;
+}
+#hangman figure {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+#hangman #display-word {
+  margin-top: 24px;
+  text-align: center;
+}
+#hangman #display-word label {
+  display: inline-block;
+  width: 24px;
+  text-align: center;
+  font-size: 1.5em;
+}
+#hangman #province {
+  color: #cd5132;
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+}
+#hangman #province div {
+  margin-left: 5px;
+  max-width: 18px;
+}
+#hangman button {
+  align-self: center;
+  margin-top: 30px;
+  border-radius: 10px;
+  padding: 3px;
+  width: 100px;
+  cursor: pointer;
+}
+
+#hangman button:active,
+#hangman button:hover {
+  background-color: #e7c483;
+}
+
+#wrapper {
+  display: flex;
+  flex-direction: column;
+  max-width: 1024px;
+  min-height: 100vh;
+  margin: auto;
+  box-shadow: 0px 0px 12px 12px #1b1b1b;
+  background-image: url("../images/hangman_background.jpg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#abc {
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 500px;
+  text-align: center;
+  border: solid 2px white;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: #e0ded7;
+}
+
+@font-face {
+  font-family: "roboto_regular";
+  src: url("../fonts/roboto-regular.woff2") format("woff2");
+  src: url("../fonts/roboto-regular.woff") format("woff");
+  font-style: normal;
+}
