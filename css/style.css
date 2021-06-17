@@ -531,7 +531,8 @@ footer {
 }
 
 .used-letter {
-  background-color: #878a87;
+  background-color: #e0ded7;
+  pointer-events: none;
 }
 
 #hangman {

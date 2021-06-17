@@ -9,11 +9,10 @@
 
 $btn_font_color: white;
 $btn_background_color: black;
-//  $btn_hover_color: #70706f;
+$btn_hover_color: rgb(135, 138, 135);
 $footer_font_color: white;
 $footer_border_color: white;
 $footer_background_color: black;
-$used_letter_background_color: rgb(135, 138, 135);
 $abc_border_color: white;
 $abc_background_color: #e0ded7;
 
@@ -61,7 +60,7 @@ input{
 
 input:hover,
 input:active{
-    background-color: $used_letter_background_color;
+    background-color: $btn_hover_color;
 }
 
 footer{
@@ -73,7 +72,8 @@ footer{
 }
 
 .used-letter{
-    background-color: $used_letter_background_color;
+    background-color: $abc_background_color;
+    pointer-events: none;
 }
 
 #hangman{
