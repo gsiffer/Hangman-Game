@@ -415,8 +415,8 @@ mark {
   min-width: 250px;
   padding: 10px;
   border-radius: 10px;
-  box-shadow: 0 0 0 2px #a0a09f, 0 0 0 4px #555454, 0 0 0 8px #2c2b2b;
-  background: linear-gradient(to bottom, #646464 0%, #b6b4b4 100%);
+  box-shadow: 0 0 0 2px #DEDEDE, 0 0 0 4px #464646, 0 0 0 8px #000000;
+  background: linear-gradient(to bottom, #000000 0%, #DEDEDE 100%);
   color: white;
 }
 .pop-up-window h3 {
@@ -446,7 +446,7 @@ mark {
 }
 #welcome-pop-up figure img {
   border-radius: 10px;
-  box-shadow: 0 0 0 2px #a0a09f, 0 0 0 4px #555454, 0 0 0 8px #2c2b2b;
+  box-shadow: 0 0 0 2px #DEDEDE, 0 0 0 4px #464646, 0 0 0 8px #000000;
 }
 #welcome-pop-up div {
   text-align: center;
@@ -455,7 +455,7 @@ mark {
 #pop-up button {
   border-radius: 10px;
   padding: 3px;
-  background-color: #555454;
+  background-color: #464646;
   border: 2px solid white;
   color: white;
   width: 100px;

@@ -1,7 +1,7 @@
 
-$pop_up_border_color_inner: #a0a09f;
-$pop_up_border_color_middle: #555454;
-$pop_up_border_color_outer: #2c2b2b;
+$pop_up_border_color_inner: #DEDEDE;
+$pop_up_border_color_middle: #464646;
+$pop_up_border_color_outer: #000000;
 $pop_up_font_color: white;
 $btn_hover_color: #70706f;
 
@@ -9,7 +9,7 @@ $border: 0 0 0 2px $pop_up_border_color_inner,
 		 0 0 0 4px $pop_up_border_color_middle, 
 		 0 0 0 8px $pop_up_border_color_outer;
 
-$linear_color: linear-gradient(to bottom, #646464 0%, #b6b4b4 100%);
+$linear_color: linear-gradient(to bottom, #000000 0%, #DEDEDE 100%);
 
 @mixin btn-color($background_color, $border_color, $font_color){
 	background-color: $background_color;
