@@ -21,6 +21,7 @@ let popUpFrameOpacity   = 0;
 let popUpAnimationHandler;
 let popUpTimeoutHandler;
 
+let firstRun = true;
 let wrongAnswerCount;
 let isMatched;
 let wordObj;
@@ -93,9 +94,6 @@ class Word {
                 if(char != ' ' && char != "'" && char != ".") {
                     magicWordArray.push(Word.LINE);
                 } 
-                else if(char === ' ') {
-                    magicWordArray.push(' ');
-                }
                 else {
                     magicWordArray.push(char);
                 }
@@ -166,7 +164,7 @@ function fadePopUp(){
 btnStart.addEventListener('click', function(){
     startTheGame();
     btnStart.style.display = 'none';
-    btnStart.textContent = 'Play again';
+    firstRun ? btnStart.textContent = 'Play again' : firstRun = false;
 });
 
 function startTheGame(){
