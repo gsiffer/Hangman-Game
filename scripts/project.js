@@ -222,7 +222,7 @@ function hitButton(e){
         
         if(wordObj.isMatch(magicWordArray)){
             isMatched = true;
-            endGame('Won');
+            endGame('won');
         }
     }
     else if(wrongAnswerCount < 6 && !isMatched){
@@ -234,7 +234,7 @@ function hitButton(e){
         this.classList.toggle('used-letter');
 
         if(wrongAnswerCount === 6){
-            endGame('Lost');
+            endGame('lost');
         } 
     } 
 }
@@ -255,12 +255,12 @@ function letterAnimation(letterPositionArray, letter){
 function endGame(text){
     btnStart.style.display = 'block';
     
-    if(text != 'Won'){  
-        popUpTitle.innerHTML = `You ${text} - Try again.`;
+    if(text != 'won'){  
+        popUpTitle.innerHTML = `You ${text}. Try again.`;
         popUpImage.firstElementChild.setAttribute('src', `images/sad.jpg`);
     }
     else{
-        popUpTitle.innerHTML = `Congratulation - You ${text}!`; 
+        popUpTitle.innerHTML = `Congratulation! You ${text}!`; 
         popUpImage.firstElementChild.setAttribute('src', `images/happy.jpg`);
     }
 
